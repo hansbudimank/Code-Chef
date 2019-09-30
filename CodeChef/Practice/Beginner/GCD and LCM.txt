@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int gcd(int b, int c) {
+	return c ? gcd(c, b % c) : b;
+}
+int main() {
+	int a;
+	cin >> a;
+	while (a--) {
+		long long b,c;
+		cin >> b>>c;
+		long long x = gcd(b, c);
+		cout << x << " " << (b * c * 1LL) / x << '\n';
+	}
+}

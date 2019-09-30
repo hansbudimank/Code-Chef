@@ -1,0 +1,17 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a;
+	cin >> a;
+	while (a--) {
+		double b,c;
+		cin >> b>>c;
+		c *= b;
+		if (b > 1000)c *= 0.9;
+		printf("%.6lf\n", c);
+	}
+}

@@ -1,0 +1,16 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+	int a;
+	cin >> a;
+	while (a--) {
+		int b;
+		cin >> b;
+		string c;
+		cin >> c;
+		int I = count(c.begin(), c.end(), 'I');
+		int Y = count(c.begin(), c.end(), 'Y');
+		cout << (I > Y ? "INDIAN" : Y > I ? "NOT INDIAN" : "NOT SURE") << '\n';
+	}
+}
