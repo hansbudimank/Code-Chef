@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a;
+	cin >> a;
+	while (a--) {
+		int b,c=0;
+		cin >> b;
+		int d[6] = { 1,2,5,10,50,100 },i=5;
+		while (b) {
+				c += b / d[i];
+				b %= d[i];
+				i--;
+		}
+		cout << c << '\n';
+	}
+}

@@ -1,0 +1,23 @@
+#include<iostream>
+#include<algorithm>
+#include<sstream>
+#include<vector>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a;
+	cin >> a;
+	int max = 0, d = 0;
+	bool ok = false;
+	while (a--) {
+		int b, c;
+		cin >> b >> c;
+		d += b - c;
+		if (abs(d) > max) {
+			max = abs(d);
+			ok = (b-c < 0 ? true : false);
+		}
+	}
+	cout << (ok ? 2 : 1) << " " << max << '\n';
+}

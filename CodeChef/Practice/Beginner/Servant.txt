@@ -1,0 +1,19 @@
+#include<iostream>
+#include<algorithm>
+#include<sstream>
+#include<vector>
+#include<cmath>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	int a;
+	cin >> a;
+	while (a--) {
+		int b;
+		cin >> b;
+		cout << (b >= 10 ? "-1" : "What an obedient servant you are!") << '\n';
+	}
+
+}

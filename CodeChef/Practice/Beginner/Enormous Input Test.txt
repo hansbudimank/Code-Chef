@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a, k,b = 0;
+	cin >> a>>k;
+	while (a--) {
+		long long int c;
+		cin >> c;
+		if (c % k == 0 &&c) ++b;
+	}
+	cout << b << '\n';
+}

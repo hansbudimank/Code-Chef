@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#define MAX 100001 
+using namespace std;
+int main() {
+	vector<int> v(MAX);
+	for (int p = 2; p * p < MAX; p++)
+		if (!v[p])
+			for (int i = p * 2; i < MAX; i += p)
+				v[i] = 1;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a;
+	cin >> a;
+	while(a--){
+		int b;
+		cin >> b;
+		cout << (v[b] ? "no" : "yes") << '\n';
+	}
+}

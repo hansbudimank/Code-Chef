@@ -1,0 +1,19 @@
+#include<iostream>
+#include<algorithm>
+#include<sstream>
+#include<vector>
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	int a;
+	cin >> a;
+	while (a--) {
+		string b;
+		cin >> b;
+		reverse(b.begin(), b.end());
+		cout << stoi(b) << '\n';
+	}
+
+}

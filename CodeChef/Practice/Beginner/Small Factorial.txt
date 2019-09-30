@@ -1,0 +1,40 @@
+#include<iostream>
+#include<algorithm>
+#include<sstream>
+#include<vector>
+#include<cmath>
+using namespace std;
+void multiply(int a,vector<int> &v) {
+	int carry = 0;
+	for (int i = 0;i < v.size();i++) {
+		int prod = v[i] * a + carry;
+		v[i] = prod % 10;
+		carry = prod / 10;
+	}
+	while (carry) {
+		v.push_back(carry % 10);
+		carry /= 10;
+	}
+}
+void factorial(int a) {
+	vector<int> v;
+	v.push_back(1);
+	for (int i = 2;i <= a;i++)
+		multiply(i, v);
+	for (int i = 0;i < v.size();i++)
+		cout << v[v.size()-1-i];
+	cout << '\n';
+}
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	int a;
+	cin >> a;
+	while (a--) {
+		int b;
+		cin >> b;
+		factorial(b);
+	}
+
+}

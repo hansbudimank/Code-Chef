@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#define MAX 100001
+using namespace std;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int a;
+	cin >> a;
+	while (a--) {
+		string b;
+		string c[4] = { "BattleShip","Cruiser","Destroyer","Frigate" };
+		cin >> b;
+		if (b[0] > 'Z')b[0] -= ' ';
+		if (b[0] > 'D')b[0] -= 1;
+		cout << c[b[0] - 'B'] << '\n';
+	}
+}
