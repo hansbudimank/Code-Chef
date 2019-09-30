@@ -1,6 +1,6 @@
 	------------------This is my journey in Code Chef------------------
 
-I started interested in Competitive Programming in 9th September 2019.
+I found my interest in Competitive Programming in 9th September 2019.
 
 I'm Currently studying in Taiwan. I joined my first CPE (Colligiate Programming Examination) in 24/9/2019. 
 
