@@ -6,7 +6,7 @@ I'm Currently studying in Taiwan. I joined my first CPE (Colligiate Programming 
 
 I got 2 out 7 questions. My ranking was 304. (Yes, I know this no where any good)
 
-Here is The Website: https://cpe.cse.nsysu.edu.tw/cpe/scoreboard
+Here is The Website: http://cpe.cse.nsysu.edu.tw/cpe/scoreboard/2019-09-24
 
 I wasn't happy either my result. So I this time I'll prepare myself way more. 
 
