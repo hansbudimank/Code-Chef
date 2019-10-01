@@ -1,4 +1,4 @@
-#Code-Chef
+# Code-Chef
 	------------------This is my journey in Code Chef------------------
 
 I found my interest in Competitive Programming in 9th September 2019.
